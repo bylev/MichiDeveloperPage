@@ -1,0 +1,19 @@
+/* Truco para uniformidad en textos entre navegadores*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px; /*! rem: es una unidad de medida en html para que sea proporcional entre dispositivos*/
+}
+
+.my-title{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.my-title span{
+    font-size: 2rem;
+}
+
