@@ -1,4 +1,11 @@
 /* Truco para uniformidad en textos entre navegadores*/
+:root{
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc108;
+    --secudario: #26939f;
+    --gris: #757575; 
+}
 
 html{
     font-size: 62.5%;
@@ -17,3 +24,33 @@ body{
     font-size: 2rem;
 }
 
+.nav-bg{
+    background-color: var(--secudario);
+}
+
+
+.navegacion-principal{
+    display: flex; /*flexbox define cómo alinear elementos*/
+    background-color: var(--secudario);
+    justify-content: space-between;
+    font-family: 'Krub', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    padding: 1rem; /*Padding es una separacion por dentro*/
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto; /*centro el contenido*/
+    
+}
