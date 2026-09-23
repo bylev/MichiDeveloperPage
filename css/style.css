@@ -122,8 +122,10 @@ h3 {
   justify-content: center;
   align-items: center;
 }
- 
+
+
 .boton {
+  display: inline-block;
   background-color: var(--secundario);
   color: var(--blanco);
   text-transform: uppercase; /* Convertir el texto en mayúsculas */
@@ -134,6 +136,7 @@ h3 {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
  
 @media (min-width: 768px) {
@@ -151,4 +154,57 @@ h3 {
     .hero-content h2 {
         font-size: 3rem;
     }
+}
+
+@media (min-width: 768px){
+  .servicios{
+    display: grid; 
+    /*Define el tamaño de las columnas*/
+    /*1fr 1fr 1fr, 33.33% cada uno*/
+    /*2fr 1fr 1fr, 50% 25% 25%*/
+    grid-template-columns: repeat(3, 1fr);/*tres columnas iguales*/
+  }
+}
+
+.servicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio h3{
+  color: var(--secundario);
+  font-weight: bold;
+}
+
+.servicio p{
+  line-height: 2; /*interlineado*/
+  text-align: center;
+}
+
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+}
+
+/* Contacto*/
+.boton:hover{
+  cursor: progress; /* Cambia el cursor a un dedo */
+}
+
+.forms{
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.forms fieldset{
+  border: none;
 }
